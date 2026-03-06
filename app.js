@@ -1,4 +1,3 @@
-
 // step 1. type module in script 
 // step 2 . live server 
 
@@ -22,3 +21,4 @@ import { getAuth } from "firebase/auth";
   const auth = getAuth(app);
   console.log("auth=>",auth);
   
+
