@@ -1,0 +1,156 @@
+
+
+
+ *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+/* Container */
+.container{
+background:#1e293b;
+padding:35px;
+border-radius:15px;
+width:100%;
+max-width:350px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+text-align:center;
+}
+
+/* Heading */
+h2{
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+/* Inputs */
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:8px;
+outline:none;
+font-size:14px;
+background:#334155;
+color:white;
+}
+
+/* Buttons */
+button{
+width:100%;
+padding:12px;
+background:#0ea5e9;
+border:none;
+border-radius:8px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+margin-top:8px;
+}
+
+button:hover{
+background:#0284c7;
+transform:scale(1.03);
+}
+
+/* Todo Page */
+.todo{
+display:none;
+width:100%;
+max-width:500px;
+margin:auto;
+}
+
+/* Task input area */
+.todo input{
+margin-top:10px;
+}
+
+/* Task List */
+ul{
+margin-top:15px;
+}
+
+li{
+background:#1e293b;
+margin:10px 0;
+padding:12px;
+border-radius:8px;
+list-style:none;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+align-items:center;
+gap:8px;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Task Buttons */
+li button{
+width:auto;
+padding:6px 12px;
+font-size:12px;
+}
+
+/* Delete Button */
+li button:first-of-type{
+background:#ef4444;
+}
+
+li button:first-of-type:hover{
+background:#dc2626;
+}
+
+/* Edit Button */
+li button:last-of-type{
+background:#22c55e;
+}
+
+li button:last-of-type:hover{
+background:#16a34a;
+}
+
+/*  Mobile Responsive */
+@media (max-width:600px){
+
+.container{
+padding:25px;
+}
+
+h2{
+font-size:20px;
+}
+
+input{
+padding:10px;
+font-size:13px;
+}
+
+button{
+padding:10px;
+font-size:14px;
+}
+
+li{
+flex-direction:column;
+align-items:flex-start;
+}
+
+li button{
+width:100%;
+}
+}
