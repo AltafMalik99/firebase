@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Firebase Todo App</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<div class="container">
+<h2>Signup</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="signup()">Signup</button>
+
+<hr>
+
+<h2>Login</h2>
+
+<input type="email" id="loginEmail" placeholder="Email">
+<input type="password" id="loginPassword" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<div id="todoPage" class="todo" style="display:none;">
+<h2>Todo App</h2>
+
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
+</div>
 
 
-    <h1>hello firebase</h1>
-    <script src="app.js" type="module"></script>
-    <!-- video 39 -->
+<script type="module" src="app.js"></script>
+
 </body>
 </html>
